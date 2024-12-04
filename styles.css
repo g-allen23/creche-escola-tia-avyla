@@ -1,0 +1,713 @@
+@import url(https://db.onlinewebfonts.com/c/56b1d105d2fa63f97d89d9626b476ec8?family=Bobby+Jones+Soft+Regular);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mask {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+    z-index: 2;
+}
+
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+header {
+    width: 100vw;
+    background-color: #E41311;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image-header {
+    width: 100vw;
+    height: 200px;
+    z-index: 0;
+}
+
+.soon {
+    position: absolute;
+    z-index: 1;
+    left: 150px;
+    width: 125px;
+    height: 125px;
+    border-radius: 75px;
+}
+
+.title {
+    font-family: "Bobby Jones Soft Regular", sans-serif;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-weight: 200;
+    font-size: 80px;
+    box-shadow: 5px;
+    margin-left: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.scrolling {
+    width: 1000px;
+    height: 450px;
+    background-color: #F6B000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.carousel {
+    height: 400px;
+    width: 700px;
+}
+
+.education {
+    display: flex;
+    gap: 50px;
+}
+
+.stage-education {
+    font-family: "Bobby Jones Soft Regular", sans-serif;
+    background-color: #E41311;
+    color: #fff;
+    height: 113px;
+    width: 289px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Bobby Jones Soft Regular", sans-serif;
+    background-color: #E41311;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    width: 100vw;
+}
+
+h3 {
+    font-family: "Bobby Jones Soft Regular", sans-serif;
+    background-color: #E41311;
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+}
+
+.mission {
+    font-family: "Roboto", sans-serif;
+    border: 4px solid #3AE109;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.p-mission {
+    font-size: 29px;
+}
+
+.vision {
+    font-family: "Roboto", sans-serif;
+    border: 4px solid #1F119B;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.p-vision {
+    font-size: 25px;
+}
+
+.values {
+    font-family: "Roboto", sans-serif;
+    border: 4px solid #FFD600;
+    padding: 22px;
+    border-radius: 15px;
+    width: 50vw;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+}
+
+.list {
+    font-size: 12.5px;
+}
+
+button {
+    font-family: "Bobby Jones Soft Regular", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: #fff;
+    background-color: #E41311;
+    height: 113px;
+    width: 289px;
+    margin: 20px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    width: 300px;
+    height: 120px;
+    font-size: 27px;
+    margin: 14px;
+    opacity: .8;
+    transition: .4s;
+}
+
+button:active {
+    background-color: #1F119B;
+    transition: .1s;
+}
+
+.img-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extend-right {
+    width: 200px;
+    height: 200px;
+    margin: 30px 30px 0px 60px;
+    transform: rotate(36deg);
+}
+
+.extend-left {
+    width: 200px;
+    height: 200px;
+    margin: 30px 30px 0px 60px;
+    transform: rotate(-36deg);
+}
+
+.here-we-have {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activities {
+    margin: 20px 20px 45px;
+    cursor: pointer;
+}
+
+.complementary-activities {
+    height: 300px;
+    width: 300px;
+    margin: 0px 30px 30px;
+}
+
+.form {
+    width: 400px;
+    background-color: #FFD600;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    gap: 15px;
+    top: 2%;
+    left: -390px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: left 1s ease-in-out;
+    z-index: 3;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+span {
+    color: #1F119B;
+}
+
+input, select {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: #3AE109;
+    color: grey;
+}
+
+
+
+@media (max-width: 1500px) {
+    .vision .mission .values {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1496px) {
+    .values {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    ul {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1485px) {
+    .vision {
+        font-size: 34.7px;
+    }
+}
+
+@media (max-width: 1474px) {
+    .mission {
+        font-size: 38px;
+    }
+
+    .vision {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1456px) {
+    .values {
+        font-size: 15.8px;
+    }
+}
+
+@media (max-width: 1446px) {
+    .vision {
+        font-size: 33px;
+    }
+
+    .mission {
+        font-size: 37px;
+    }
+
+    .values {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .complementary-activities {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 1323px) {
+    .title {
+        font-size: 70px;
+    }
+
+    .mission {
+        font-size: 35px;
+    }
+
+    .img-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1290px) {
+    .vision {
+        font-size: 30px;
+    }
+
+    .extend-right,
+    .extend-left {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 1246px) {
+    .title {
+        margin-left: 80px;
+    }
+
+    .mission {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 1223px) {
+    .values {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        margin-left: 200px;
+    }
+
+    .extend-left,
+    .extend-right {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 1197px) {
+    .complementary-activities {
+        margin: 0px 20px 20px;
+    }
+}
+
+@media (max-width: 1157px) {
+    .mission {
+        font-size: 30px;
+    }
+
+    .vision {
+        font-size: 28px;
+    }
+
+    .extend-left,
+    .extend-right {
+        height: 140px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 1137px) {
+    .complementary-activities {
+        margin: 0px 10px 10px;
+    }
+}
+
+@media (max-width: 1097px) {
+    .values {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1083px) {
+    .soon {
+        height: 100px;
+        width: 100px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .img-child {
+        margin-left: 0px;
+    }
+
+    .complementary-activities {
+        margin: 0px 5px 5px;
+    }
+}
+
+@media (max-width: 1047px) {
+    .complementary-activities {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1016px) {
+    .navigation-auto {
+        flex-direction: row;
+    }
+    
+    .education {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .mission {
+        font-size: 29px;
+    }
+
+    .vision {
+        font-size: 27px;
+    }
+
+    .values {
+        font-size: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extend-left,
+    .extend-right {
+        margin-left: 60px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 957px) {
+    .scrolling {
+        width: 800px;
+    }
+    
+    .slide, .first {
+        width: 2500px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mission {
+        font-size: 40px;
+    }
+
+    .vision {
+        font-size: 37px;
+    }
+
+    .values {
+        font-size: 16px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+
+    .here-we-have {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .name-activities {
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+
+    .img-activities {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .complementary-activities {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+
+    }
+
+    @media (max-width: 925px) {
+        .soon {
+            left: 100px;
+        }
+    }
+
+    @media (max-width: 860px) {
+        .title {
+            font-size: 50px;
+        }
+
+        .extend-left,
+        .extend-right {
+            margin-left: 40px;
+            margin-right: 30px;
+        }
+    }
+
+    @media (max-width: 830px) {
+
+        .extend-left,
+        .extend-right {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @media (max-width: 755px) {
+        .soon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .title {
+            font-size: 40px;
+            right: 90px;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .title {
+            font-size: 39px;
+        }
+
+        .scrolling {
+            width: 600px;
+        }
+
+        .image-scroll {
+            width: 500px;
+        }
+
+        .extend-left,
+        .extend-right {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    @media (max-width: 713px) {
+        .title {
+            right: 50px;
+        }
+
+        .activities {
+            margin: 20px;
+        }
+
+        .here-we-have {
+            gap: 10px;
+        }
+
+        .name-activities {
+            gap: 100px;
+        }
+
+        .complementary-activities {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        @media (max-width: 672px) {
+            .title {
+                font-size: 35px;
+                right: 40px;
+            }
+
+            h2 {
+                font-size: 33px;
+            }
+
+            .extend-left,
+            .extend-right {
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+
+        @media (max-width: 621px) {
+            .title {
+                font-size: 34px;
+                right: 30px;
+            }
+
+            .scrolling {
+                width: 500px;
+            }
+
+            .image-scroll {
+                width: 400px;
+            }
+        }
+    }
+
+    @media (max-width: 601px) {
+        .title {
+            font-size: 32px;
+            right: 15px;
+        }
+
+        .extend-left,
+        .extend-right {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media (max-width: 565px) {
+        .title {
+            font-size: 30px;
+        }
+    }
+}
