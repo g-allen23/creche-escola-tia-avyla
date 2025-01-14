@@ -273,7 +273,7 @@ button:active {
     position: fixed;
     align-items: center;
     gap: 15px;
-    top: 2%;
+    top: 5px;
     left: -390px;
     padding: 20px;
     border-radius: 10px;
