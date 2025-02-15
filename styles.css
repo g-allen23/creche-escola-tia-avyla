@@ -92,7 +92,9 @@ main {
 .carousel {
     height: 400px;
     width: 800px;
-    box-shadow: 10px 10px 15px  black;
+    box-shadow: 10px 10px 15px black;
+    transform: translateX(0vw);
+    transition: 0.5s;
 }
 
 .education {
@@ -303,7 +305,8 @@ span {
     color: #1F119B;
 }
 
-input, select {
+input,
+select {
     height: 40px;
     width: 300px;
     border-radius: 5px;
@@ -501,7 +504,7 @@ input, select {
     .navigation-auto {
         flex-direction: row;
     }
-    
+
     .education {
         display: flex;
         flex-direction: column;
@@ -536,8 +539,9 @@ input, select {
     .scrolling {
         width: 800px;
     }
-    
-    .slide, .first {
+
+    .slide,
+    .first {
         width: 2500px;
     }
 
