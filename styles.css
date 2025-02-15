@@ -93,8 +93,6 @@ main {
     height: 400px;
     width: 800px;
     box-shadow: 10px 10px 15px black;
-    transform: translateX(0vw);
-    transition: 0.5s;
 }
 
 .education {
