@@ -3,6 +3,7 @@ const mascara = document.querySelector(".mask")
 const rightArrow = document.getElementById("right")
 const leftArrow = document.getElementById("left")
 const imgMain = document.querySelector(".carousel")
+let idImg = 0
 
 function show() {
     forms.style.left = "50%"
@@ -55,5 +56,19 @@ function changeImageLeft() {
     }
 }
 
+function carrousel() {
+    if (idImg == 0) {
+        changeImageRight()
+        idImg++
+    } else if (idImg == 1) {
+        changeImageRight()
+        idImg++
+    } else if (idImg == 2) {
+        changeImageRight()
+        idImg = 0
+    }
+}
+
+setInterval(carrousel, 3000)
 leftArrow.addEventListener("click", changeImageLeft)
 rightArrow.addEventListener("click", changeImageRight)
